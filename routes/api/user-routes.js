@@ -5,11 +5,11 @@ const { getAllUsers, getUserById, createUser, updateUser, deleteUser, addFriend,
 router
   .route("/")
   .get(getAllUsers)
-  // .post(createUser);
+  .post(createUser);
 
-// router 
-//   .route("/:id")
-//   .get(getUserById)
+router 
+  .route("/:id")
+  .get(getUserById)
 //   .put(updateUser)
 //   .delete(deleteUser);
 

@@ -11,7 +11,7 @@ router
   .route("/:id")
   .get(getUserById)
   .put(updateUser)
-//   .delete(deleteUser);
+  .delete(deleteUser);
 
 // router 
 //   .route("/:userId/friends/:friendsId")

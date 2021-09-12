@@ -9,7 +9,7 @@ router
 router  
   .route("/:id")
   .get(getThoughtById)
-//   .put(updateThought)
+  .put(updateThought)
 //   .delete(deleteThought);
 
 router

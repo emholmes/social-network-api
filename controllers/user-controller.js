@@ -28,6 +28,21 @@ const userController = {
         res.status(400).json(err);
       });
   }, 
+
+  // add a new friend to a user's friend list
+  addFriend({ params }, res) {
+    User.findOneAndUpdate(
+      { _id: params.userId },
+      { $push: { friends: params.friendsId } },
+      { new: true }
+    ).then(dbUserData => {
+      if (!dbUserData) {
+        return res.status(404).json({ message: "No user found with this id"});
+      }
+      res.json(dbUserData);
+    }) 
+    .catch(err => res.json(err));
+  },
   
   updateUser({ params, body }, res) {
     User.findOneAndUpdate(
@@ -48,6 +63,7 @@ const userController = {
       });
   }, 
 
+  // deletes user and all of the user's thoughts
   deleteUser({ params }, res) {
     User.findOneAndDelete({ 
       _id: params.id 

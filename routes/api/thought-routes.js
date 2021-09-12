@@ -9,13 +9,9 @@ router
 router  
   .route("/:id")
   .get(getThoughtById)
+  .post(createThought)
   .put(updateThought)
 //   .delete(deleteThought);
-
-router
-  .route("/:userId")
-  .post(createThought);
-;
 
 // router
 //   .route("/:thoughtId/reactions")

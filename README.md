@@ -17,7 +17,7 @@ To install any necessary dependencies run the following command:
     npm install
 
 ## Usage 
-For local usage, clone the repo on you local manchine and open in an IDE. If you haven't already, make sure you have node.js installed as well as npm (check installation: `node -v` & `npm -v`). In the packages root directory, run `npm i` to install the necessary dependencies. These include: mongoose.js, express.js, and moment.js. Once all dependencies are installed, run `npm start` to initiate the applciation. You can use Insomnia core to test the api routes. 
+For local usage, clone the repo on you local manchine and open in an IDE. If you haven't already, make sure you have node.js installed as well as npm (check installation: `node -v` & `npm -v`). In the packages root directory, run `npm i` to install the necessary dependencies. These include: mongoose.js, express.js, and moment.js. Once all dependencies are installed, run `npm start` to initiate the application. You can use Insomnia core to test the api routes. 
 
 ## Video Walkthrough
 [Watch video walkthrough](https://drive.google.com/file/d/13zJckZeMBdUDQqWc8GP7wUoSqzBbU6t7/view)

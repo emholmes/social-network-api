@@ -28,7 +28,7 @@ const ReactionSchema = new Schema (
     }, 
     _id: false
   }
-)
+);
 
 const ThoughtSchema = new Schema (
   {
@@ -57,7 +57,7 @@ const ThoughtSchema = new Schema (
     },
     id: false
   }
-)
+);
 
 // virtual to retrieve the length of the though's reactions array field
 ThoughtSchema.virtual("reactionCount").get(function() {

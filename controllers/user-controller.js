@@ -79,11 +79,6 @@ const userController = {
         if (!deletedUser) {
           return res.status(404).json({ message: "No user found with this id." });
         }
-        return Thought.deleteMany({});
-      }).then(dbThoughtData => {
-        if (!dbThoughtData) {
-          return res.status(404).json({ message: "No thought found with this id."});
-        }
         res.json(deletedUser);
       })
       .catch(err => res.json(err));

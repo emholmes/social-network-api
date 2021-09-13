@@ -2,7 +2,7 @@
 ## NoSQL Challenge
 
 ## Description
-This week we were challenged to build a social network API using a NoSQL database. This app uses Express.js for server routing, MongoDB as the noSQL database, and Mongoose, an object-modelign tool for MongoDB to perform CRUD operations. This application also uses Moment.js to format timestamps to be more readable.
+This week we were challenged to build a social network API using a NoSQL database. This app uses Express.js for server routing, MongoDB as the noSQL database, and Mongoose, an object-modeling tool for MongoDB to perform CRUD operations. This application also uses Moment.js to format timestamps to be more readable.
 
 ## Table of Contents
 * [Installation](#installation)
